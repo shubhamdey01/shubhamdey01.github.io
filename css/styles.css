@@ -524,14 +524,14 @@ img {
 	z-index: var(--z-modal);
 	opacity: 0;
 	visibility: hidden;
-	transition: .3s;
+	transition: 0.3s;
 }
 
 .education__modal-content {
 	position: relative;
 	background-color: var(--container-color);
 	padding: 1.5rem;
-	border-radius: .5rem;
+	border-radius: 1.25rem;
 }
 
 .education__modal-educations {
@@ -566,19 +566,20 @@ img {
 	gap: 1.5rem;
 	padding: 1rem;
 	background-color: var(--container-color);
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 	box-shadow: 0 2px 4px var(--first-color-lighter);
 	text-align: center;
 }
 
 .qualification__certification {
-	margin: .5rem;
-	display: inline-flex;
+	margin: 0.5rem;
+	display: inline-table;
 	text-align: left;
 	gap: 1rem;
-	padding: .6rem;
+	padding: 1rem;
 	border-radius: 1rem;
 	box-shadow: 0 0 2px var(--first-color-lighter);
+	width: 45%;
 }
 
 .qualification__certification:hover {
@@ -838,7 +839,7 @@ a.contact__link:visited {
 	}
 
 	.education__modal {
-		padding: 0 .5rem;
+		padding: 0.5rem;
 	}
 }
 
@@ -956,6 +957,10 @@ a.contact__link:visited {
 		grid-template-columns: repeat(3, 218px);
 		justify-content: center;
 	}
+	
+	.education__modal-content {
+		width: 500px;
+	  }
 
 	.qualification__tabs {
 		justify-content: center;
