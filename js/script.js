@@ -33,7 +33,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+    tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -54,8 +54,8 @@ tabs.forEach(tab => {
 
 /*==================== EDUCATION MODAL ====================*/
 const modalViews = document.querySelectorAll('.education__modal'),
-      modalBtns = document.querySelectorAll('.education__button'),
-      modalCloses = document.querySelectorAll('.education__modal-close')
+    modalBtns = document.querySelectorAll('.education__button'),
+    modalCloses = document.querySelectorAll('.education__modal-close')
 
 let modal = function(modalClick) {
     modalViews[modalClick].classList.add('active-modal')
@@ -74,6 +74,31 @@ modalCloses.forEach((modalClose, i) => {
         })
     })
 })
+
+/*==================== EMAIL JS ====================*/
+const contactForm = document.getElementById('contact__form'),
+    contactMessage = document.getElementById('contact__message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    emailjs.sendForm('service_b7qjgmd', 'template_i9a3koo', '#contact__form', '3Tle9MVUGVZJejuxy')
+        .then(() =>{
+            contactMessage.textContent = 'Message sent successfully ✅'
+
+            setTimeout(() =>{
+                contactMessage.textContent = ''
+            }, 5000)
+
+            contactForm.reset()
+        }, () =>{
+            contactMessage.textContent = 'Message not sent (service error) ❌'
+        })
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
+
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
