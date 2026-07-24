@@ -1,498 +1,640 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EE07S040WY"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EE07S040WY"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'G-EE07S040WY');
+      gtag('config', 'G-EE07S040WY');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--==================== ICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/loader.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/loader.css" />
 
     <title>Shubham - Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="loader-body" id="loader">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
-    <script type='text/javascript'>
-        document.body.onload = function () {
-            setTimeout(function () {
-                var preloader = document.getElementById('loader');
-                if (!preloader.classList.contains('done')) {
-                    preloader.classList.add('done');
-                }
-            }, 1000)
-        }
+    <script type="text/javascript">
+      document.body.onload = function () {
+        setTimeout(function () {
+          var preloader = document.getElementById('loader');
+          if (!preloader.classList.contains('done')) {
+            preloader.classList.add('done');
+          }
+        }, 1000);
+      };
     </script>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Shubham Dey</a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Shubham Dey</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#qualification" class="nav__link">
-                            <i class="uil uil-award-alt nav__icon"></i> Qualifications
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="uil uil-award-alt nav__icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <!-- Theme Change Button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-award-alt nav__icon"></i> Qualifications
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-award-alt nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme Change Button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/shubhamdey01/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/shubhamdey01/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
 
-                        <a href="https://github.com/shubhamdey01/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github"></i>
-                        </a>
+              <a
+                href="https://github.com/shubhamdey01/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github"></i>
+              </a>
 
-                        <a href="https://leetcode.com/shubhamdey01/" target="_blank" class="home__social-icon">
-                            <span class="simple-icons--leetcode"></span>
-                        </a>
+              <a
+                href="https://leetcode.com/shubhamdey01/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <span class="simple-icons--leetcode"></span>
+              </a>
 
-                        <a href="https://auth.geeksforgeeks.org/user/shubhamdey01/" target="_blank"
-                            class="home__social-icon">
-                            <span class="simple-icons--geeksforgeeks"></span>
-                        </a>
-                    </div>
+              <a
+                href="https://auth.geeksforgeeks.org/user/shubhamdey01/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <span class="simple-icons--geeksforgeeks"></span>
+              </a>
+            </div>
 
-                    <div class="home__image">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+            <div class="home__image">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
 
-                                <image class="home__blob-img" x="10" y="5" xlink:href="/images/home.png" />
-                            </g>
-                        </svg>
-                    </div>
+                  <image
+                    class="home__blob-img"
+                    x="10"
+                    y="5"
+                    xlink:href="/images/home.png"
+                  />
+                </g>
+              </svg>
+            </div>
 
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Shubham</h1>
-                        <h3 class="home__subtitle">Research Scholar, CSE</h3>
-                        <!-- <p class="home__description">
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Shubham</h1>
+              <h3 class="home__subtitle">Research Scholar, CSE</h3>
+              <!-- <p class="home__description">
                             Pursuing Ph.D. in Computer Science & Engineering from IIT Kharagpur.
                         </p> -->
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My Introduction</span>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My Introduction</span>
 
-            <div class="about__container container grid">
-                <!-- <img src="/images/about.jpg" alt="" class="about__img"> -->
-                <div class="about__img">
-                    <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="maskBorder" mask-type="alpha">
-                            <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+        <div class="about__container container grid">
+          <!-- <img src="/images/about.jpg" alt="" class="about__img"> -->
+          <div class="about__img">
+            <svg
+              class="about__blob"
+              viewBox="0 0 550 592"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="maskBorder" mask-type="alpha">
+                <path
+                  d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
                                171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
                                448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
                                270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
                                439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
-                                fill="black" />
-                        </mask>
-                        <g mask="url(#maskBorder)">
-                            <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+                  fill="black"
+                />
+              </mask>
+              <g mask="url(#maskBorder)">
+                <rect x="37" width="476" height="630" fill="url(#pattern2)" />
 
-                            <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                <path
+                  d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
                                192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
                                580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
                                40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
-                               175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black"
-                                stroke-width="10" />
-                        </g>
+                               175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+                  stroke="black"
+                  stroke-width="10"
+                />
+              </g>
 
-                        <!-- <rect x="37" width="476" height="300" fill="url(#pattern3)"/> -->
+              <!-- <rect x="37" width="476" height="300" fill="url(#pattern3)"/> -->
 
-                        <defs>
-                            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
-                            </pattern>
+              <defs>
+                <pattern
+                  id="pattern2"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
 
-                            <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
-                            </pattern>
+                <pattern
+                  id="pattern3"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
 
-                            <!-- Insert your profile (recommended size: 640 x 940) -->
-                            <image class="about__blob-img" id="imageBorder" width="640" height="940"
-                                href="/images/about.jpg" />
-                        </defs>
-                    </svg>
-                </div>
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="about__blob-img"
+                  id="imageBorder"
+                  width="640"
+                  height="940"
+                  href="/images/about.jpg"
+                />
+              </defs>
+            </svg>
+          </div>
 
-                <div class="about__data">
-                    <p class="about__description">
-                        Ph.D. Research Scholar in Computer Science & Engineering at IIT Kharagpur, working under the 
-                        supervision of Prof. Sudip Misra. I Hold M.Sc. in Computer Science from Banaras Hindu University 
-                        and B.Sc. (Honours) in Computer Science from Visva-Bharati University. <br><br>
-                        My research interest lie in computer science, with a strong focus on developing innovative 
-                        solutions to challenging problems. I am passionate about research, problem-solving and continuous 
-                        learning and I enjoy exploring emerging technologies and contributing to impactful academic work.
-                    </p>
-                    <div class="about__buttons">
-                        <a download="" href="/pdf/resume.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="about__data">
+            <p class="about__description">
+              Ph.D. Research Scholar in Computer Science & Engineering at IIT
+              Kharagpur, working under the supervision of Prof. Sudip Misra. I
+              Hold M.Sc. in Computer Science from Banaras Hindu University and
+              B.Sc. (Honours) in Computer Science from Visva-Bharati University.
+              <br /><br />
+              My research interest lie in computer science, with a strong focus
+              on developing innovative solutions to challenging problems. I am
+              passionate about research, problem-solving and continuous learning
+              and I enjoy exploring emerging technologies and contributing to
+              impactful academic work.
+            </p>
+            <div class="about__buttons">
+              <a download="" href="/pdf/resume.pdf" class="button button--flex">
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My Technical Knowledge</span>
-            <div class="skills__container container grid">
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Technical Knowledge</span>
+        <div class="skills__container container grid">
+          <!--==================== SKILL 1 ====================-->
+          <div class="skills__content">
+            <i class="uil uil-book-open skills__icon"></i>
+            <h3 class="skills__title">Coursework</h3>
+            <p class="skills__description">
+              Artificial Intelligence, Machine Learning, Neural Networks, Text
+              Mining
+            </p>
 
-                <!--==================== SKILL 1 ====================-->
-                <div class="skills__content">
-                    <i class="uil uil-book-open skills__icon"></i>
-                    <h3 class="skills__title">Coursework</h3>
-                    <p class="skills__description">
-                        Artificial Intelligence, Machine Learning, Neural Networks, Text Mining
-                    </p>
+            <span
+              class="button button--flex button--small button--link education__button"
+              id="skills__button"
+            >
+              View More <i class="uil uil-arrow-right button__icon"></i>
+            </span>
 
-                    <span class="button button--flex button--small button--link education__button" id="skills__button">
-                        View More <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-                    
-                    <div class="education__modal" id="skills__modal">
-                        <div class="skills__modal-content">
-                            <h4 class="skills__modal-title">Coursework</h4>
-                            <i class="uil uil-times education__modal-close"></i>
-                            <div class="two-columns">
-                                <ul class="skills__modal-skillss grid column">
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Artificial Intelligence
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Neural Networks
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Soft Computing
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Data Structures
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Probability & Statistics
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Calculus
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Numerical Methods
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Operating Systems
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Network Programming
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Interne of Things
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Theory of Computation
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Computer Architecture
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Linux Programming
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Information Security
-                                        </p>
-                                    </li>
-                                </ul>
+            <div class="education__modal" id="skills__modal">
+              <div class="skills__modal-content">
+                <h4 class="skills__modal-title">Coursework</h4>
+                <i class="uil uil-times education__modal-close"></i>
+                <div class="two-columns">
+                  <ul class="skills__modal-skillss grid column">
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Artificial Intelligence
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Neural Networks
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Soft Computing
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Data Structures
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Probability & Statistics
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Calculus
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Numerical Methods
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Operating Systems
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Network Programming
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Interne of Things
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Theory of Computation
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Computer Architecture
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Linux Programming
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Information Security
+                      </p>
+                    </li>
+                  </ul>
 
-                                <ul class="skills__modal-skillss grid column">
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Machine Learning
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Text Mining
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            DBMS
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Analysis of Algorithms
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Discrete Mathematics
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Algebra
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            LPP
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Computer Networks
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Software Engineering
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Mobile AdHoc Networks
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Compiler Design
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Computer Graphics
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Image Processing
-                                        </p>
-                                    </li>
-                                    <li class="skills__modal-skills">
-                                        <p>
-                                            <i class="uil uil-check-circle education__modal-icon"></i>
-                                            Internet Technologies
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
+                  <ul class="skills__modal-skillss grid column">
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Machine Learning
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Text Mining
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        DBMS
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Analysis of Algorithms
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Discrete Mathematics
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Algebra
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        LPP
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Computer Networks
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Software Engineering
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Mobile AdHoc Networks
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Compiler Design
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Computer Graphics
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Image Processing
+                      </p>
+                    </li>
+                    <li class="skills__modal-skills">
+                      <p>
+                        <i
+                          class="uil uil-check-circle education__modal-icon"
+                        ></i>
+                        Internet Technologies
+                      </p>
+                    </li>
+                  </ul>
                 </div>
-                
-                <!--==================== SKILL 2 ====================-->
-                <div class="skills__content">
-                    <i class="uil uil-arrow skills__icon"></i>
-                    <h3 class="skills__title">General</h3>
-                    <p class="skills__description">
-                        Python, C/C++, Java, Git/GitHub, SQL, MATLAB
-                    </p>
-                </div>
-                
-                <!--==================== SKILL 3 ====================-->
-                <div class="skills__content">
-                    <i class="uil uil-brain skills__icon"></i>
-                    <h3 class="skills__title">Data Science & <br> Machine Learning</h3>
-                    <p class="skills__description">
-                        pandas, numpy, scikit-learn, NLTK, OpenCV, matplotlib, seaborn
-                    </p>
-                </div>
-                
-                <!--==================== SKILL 4 ====================-->
-                <div class="skills__content">
-                    <i class="uil uil-globe skills__icon"></i>
-                    <h3 class="skills__title">Web Technologies</h3>
-                    <p class="skills__description">
-                        HTML5, CSS, JavaScript, PHP
-                    </p>
-                </div>
-                
-                <!--==================== SKILL 5 ====================-->
-                <div class="skills__content">
-                    <i class="uil uil-laptop skills__icon"></i>
-                    <h3 class="skills__title">IDEs</h3>
-                    <p class="skills__description">
-                        VS Code, PyCharm, IntelliJ IDEA, Eclipse, Jupyter, Google Colab, Anaconda
-                    </p>
-                </div>
-                
-                <!--==================== SKILL 6 ====================-->
-                <div class="skills__content">
-                    <i class="uil uil-desktop-alt skills__icon"></i>
-                    <h3 class="skills__title">Platform</h3>
-                    <p class="skills__description">
-                        Linux, Windows
-                    </p>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section" id="qualification">
-            <h2 class="section__title">Qualifications</h2>
-            <span class="section__subtitle">My Personal Journey</span>
+          <!--==================== SKILL 2 ====================-->
+          <div class="skills__content">
+            <i class="uil uil-arrow skills__icon"></i>
+            <h3 class="skills__title">General</h3>
+            <p class="skills__description">
+              Python, C/C++, Java, Git/GitHub, SQL, MATLAB
+            </p>
+          </div>
 
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
+          <!--==================== SKILL 3 ====================-->
+          <div class="skills__content">
+            <i class="uil uil-brain skills__icon"></i>
+            <h3 class="skills__title">
+              Data Science & <br />
+              Machine Learning
+            </h3>
+            <p class="skills__description">
+              pandas, numpy, scikit-learn, NLTK, OpenCV, matplotlib, seaborn
+            </p>
+          </div>
 
-                    <div class="qualification__button button--flex" data-target="#certification">
-                        <i class="uil uil-notebooks qualification_icon"></i>
-                        Certifications
-                    </div>
-                </div>
+          <!--==================== SKILL 4 ====================-->
+          <div class="skills__content">
+            <i class="uil uil-globe skills__icon"></i>
+            <h3 class="skills__title">Web Technologies</h3>
+            <p class="skills__description">HTML5, CSS, JavaScript, PHP</p>
+          </div>
 
-                <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== EDUCATION 5 ====================-->
-                        <div class="qualification__education">
-                            <div>
-                                <h3 class="qualification__title">Ph.D. in Computer Science & Engineering</h3>
-                                <span class="qualification__subtitle">Indian Institute of Technology <br> Kharagpur, West
-                                    Bengal</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    July 2026 - Present
-                                </div>
-                                <!-- <span class="button button--flex button--small button--link education__button">
+          <!--==================== SKILL 5 ====================-->
+          <div class="skills__content">
+            <i class="uil uil-laptop skills__icon"></i>
+            <h3 class="skills__title">IDEs</h3>
+            <p class="skills__description">
+              VS Code, PyCharm, IntelliJ IDEA, Eclipse, Jupyter, Google Colab,
+              Anaconda
+            </p>
+          </div>
+
+          <!--==================== SKILL 6 ====================-->
+          <div class="skills__content">
+            <i class="uil uil-desktop-alt skills__icon"></i>
+            <h3 class="skills__title">Platform</h3>
+            <p class="skills__description">Linux, Windows</p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualifications</h2>
+        <span class="section__subtitle">My Personal Journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+            <div
+              class="qualification__button button--flex"
+              data-target="#certification"
+            >
+              <i class="uil uil-notebooks qualification_icon"></i>
+              Certifications
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== EDUCATION 5 ====================-->
+              <div class="qualification__education">
+                <div>
+                  <h3 class="qualification__title">
+                    Ph.D. in Computer Science & Engineering
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Indian Institute of Technology <br />
+                    Kharagpur, West Bengal</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    July 2026 - Present
+                  </div>
+                  <!-- <span class="button button--flex button--small button--link education__button">
                                         View More <i class="uil uil-arrow-right button__icon"></i>
                                     </span>
                                     <div class="education__modal">
@@ -511,309 +653,439 @@
                                             </ul>
                                         </div>
                                     </div> -->
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== EDUCATION 4 ====================-->
-                        <div class="qualification__education">
-
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">M.Sc. in Computer Science</h3>
-                                <span class="qualification__subtitle">Banaras Hindu University <br> Varanasi, Uttar
-                                    Pradesh</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2023 - 2025
-                                </div>
-                                <span class="button button--flex button--small button--link education__button">
-                                        View More <i class="uil uil-arrow-right button__icon"></i>
-                                    </span>
-                                    <div class="education__modal">
-                                        <div class="education__modal-content">
-                                            <h4 class="education__modal-title">Post-graduation Summary</h4>
-                                            <i class="uil uil-times education__modal-close"></i>
-                                            <ul class="education__modal-educations grid">
-                                                <li class="education__modal-education">
-                                                    <i class="uil uil-check-circle education__modal-icon"></i>
-                                                    <p>Awarded BHU Medal for securing 1st rank</p>
-                                                </li>
-                                                <li class="education__modal-education">
-                                                    <i class="uil uil-check-circle education__modal-icon"></i>
-                                                    <p>Scored 8.9 CGPA</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <!--==================== EDUCATION 3 ====================-->
-                        <div class="qualification__education">
-
-                            <div>
-                                <h3 class="qualification__title">B.Sc.(Honours) in Computer Science</h3>
-                                <span class="qualification__subtitle">Visva-Bharati University <br> Santiniketan, West
-                                    Bengal</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2023
-                                </div>
-                                <span class="button button--flex button--small button--link education__button">
-                                    View More <i class="uil uil-arrow-right button__icon"></i>
-                                </span>
-                                <div class="education__modal">
-                                    <div class="education__modal-content">
-                                        <h4 class="education__modal-title">Under-graduation Summary</h4>
-                                        <i class="uil uil-times education__modal-close"></i>
-                                        <ul class="education__modal-educations grid">
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>Core: Computer Science, Elective: Mathematics</p>
-                                            </li>
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>Scored 8.83 CGPA</p>
-                                            </li>
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>1st Rank Holder</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== EDUCATION 2 ====================-->
-                        <div class="qualification__education">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Class XII (Science), CBSE</h3>
-                                <span class="qualification__subtitle">Jawahar Navodaya Vidyalaya <br> Bokaro, 
-                                    Jharkhand</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020
-                                </div><span class="button button--flex button--small button--link education__button">
-                                    View More <i class="uil uil-arrow-right button__icon"></i>
-                                </span>
-                                <div class="education__modal">
-                                    <div class="education__modal-content">
-                                        <h4 class="education__modal-title">Class 12th Summary</h4>
-                                        <i class="uil uil-times education__modal-close"></i>
-                                        <ul class="education__modal-educations grid">
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>Subjects studied: English, Computer Science, Mathematics, Physics,
-                                                    Chemistry</p>
-                                            </li>
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>Scored 95.2%</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== EDUCATION 1 ====================-->
-                        <div class="qualification__education">
-
-                            <div>
-                                <h3 class="qualification__title">Class X, CBSE</h3>
-                                <span class="qualification__subtitle">Jawahar Navodaya Vidyalaya <br> Bokaro,
-                                    Jharkhand</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018
-                                </div><span class="button button--flex button--small button--link education__button">
-                                    View More <i class="uil uil-arrow-right button__icon"></i>
-                                </span>
-                                <div class="education__modal">
-                                    <div class="education__modal-content">
-                                        <h4 class="education__modal-title">Class 10th Summary</h4>
-                                        <i class="uil uil-times education__modal-close"></i>
-                                        <ul class="education__modal-educations grid">
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>Subjects studied: English, Hindi, Mathematics, Science, Social
-                                                    Science</p>
-                                            </li>
-                                            <li class="education__modal-education">
-                                                <i class="uil uil-check-circle education__modal-icon"></i>
-                                                <p>Scored 92.4%</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content container grid" data-content id="certification">
-                        <!--==================== CERTIFICATION 1 ====================-->
-                        <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S55880016430170211.pdf"
-                            target="_blank" class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/nptel-logo.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Data Science for Engineers</h3>
-                                    <span class="qualification__subtitle">NPTEL</span>
-                                    <p class="qualification__skills">Skills: R, Algebra, Statistics, Optimization, 
-                                        Regression, Classification, Clustering</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!--==================== CERTIFICATION 2 ====================-->
-                        <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S55880016430170211.pdf"
-                            target="_blank" class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/nptel-logo.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Introduntion to Soft Computing</h3>
-                                    <span class="qualification__subtitle">NPTEL</span>
-                                    <p class="qualification__skills">Skills: Fuzzy Logic, Fuzzy Systems, ANN, Genetic Algorithms</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!--==================== CERTIFICATION 3 ====================-->
-                        <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S55880016430170211.pdf"
-                            target="_blank" class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/nptel-logo.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title"> Programming, Data Structures and Algorithms using Python</h3>
-                                    <span class="qualification__subtitle">NPTEL</span>
-                                    <p class="qualification__skills">Skills: Python, Data Structures, Algorithms</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!--==================== CERTIFICATION 4 ====================-->
-                        <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs44/Course/NPTEL24CS44S116970012230723574.pdf"
-                            target="_blank" class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/nptel-logo.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title"> Programming in Modern C++</h3>
-                                    <span class="qualification__subtitle">NPTEL</span><br><br>
-                                    <p class="qualification__skills">Skills: C++, OOPs</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!--==================== CERTIFICATION 5 ====================-->
-                        <a href="https://www.freecodecamp.org/certification/shubhamdey01/responsive-web-design/"
-                            target="_blank" class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/fcc.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Scientific Computing with Python</h3>
-                                    <span class="qualification__subtitle">freeCodeCamp</span>
-                                    <p class="qualification__skills">Skills: Python, OPPs, Data Structures, 
-                                        Regular Expressions, Problem Solving</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!--==================== CERTIFICATION 6 ====================-->
-                        <a href="https://olympus1.mygreatlearning.com/course_certificate/MUTPHDVL/" target="_blank"
-                            class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/gl.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Git Tutorial</h3>
-                                    <span class="qualification__subtitle">Great Learning</span>
-                                    <p class="qualification__skills">Skills: Version-control, Git, GitHub</p>
-                                </div>
-                            </div>
-                        </a>
-                        <!--==================== CERTIFICATION 7 ====================-->
-                        <a href="https://www.freecodecamp.org/certification/shubhamdey01/responsive-web-design/"
-                            target="_blank" class="qualification__view">
-                            <div class="qualification__certification">
-                                <div>
-                                    <img src="/images/fcc.png" alt="" class="qualification__logo">
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Responsive Web Design</h3>
-                                    <span class="qualification__subtitle">freeCodeCamp</span>
-                                    <p class="qualification__skills">Skills: Web-design, HTML5, CSS</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 4 ====================-->
+              <div class="qualification__education">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    M.Sc. in Computer Science
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Banaras Hindu University <br />
+                    Varanasi, Uttar Pradesh</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023 - 2025
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link education__button"
+                  >
+                    View More <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="education__modal">
+                    <div class="education__modal-content">
+                      <h4 class="education__modal-title">
+                        Post-graduation Summary
+                      </h4>
+                      <i class="uil uil-times education__modal-close"></i>
+                      <ul class="education__modal-educations grid">
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>Awarded BHU Medal for securing 1st rank</p>
+                        </li>
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>Scored 8.9 CGPA</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 3 ====================-->
+              <div class="qualification__education">
+                <div>
+                  <h3 class="qualification__title">
+                    B.Sc.(Honours) in Computer Science
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Visva-Bharati University <br />
+                    Santiniketan, West Bengal</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 2023
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link education__button"
+                  >
+                    View More <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="education__modal">
+                    <div class="education__modal-content">
+                      <h4 class="education__modal-title">
+                        Under-graduation Summary
+                      </h4>
+                      <i class="uil uil-times education__modal-close"></i>
+                      <ul class="education__modal-educations grid">
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>Core: Computer Science, Elective: Mathematics</p>
+                        </li>
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>Scored 8.83 CGPA</p>
+                        </li>
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>1st Rank Holder</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 2 ====================-->
+              <div class="qualification__education">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">
+                    Class XII (Science), CBSE
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Jawahar Navodaya Vidyalaya <br />
+                    Bokaro, Jharkhand</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link education__button"
+                  >
+                    View More <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="education__modal">
+                    <div class="education__modal-content">
+                      <h4 class="education__modal-title">Class 12th Summary</h4>
+                      <i class="uil uil-times education__modal-close"></i>
+                      <ul class="education__modal-educations grid">
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: English, Computer Science,
+                            Mathematics, Physics, Chemistry
+                          </p>
+                        </li>
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>Scored 95.2%</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 1 ====================-->
+              <div class="qualification__education">
+                <div>
+                  <h3 class="qualification__title">Class X, CBSE</h3>
+                  <span class="qualification__subtitle"
+                    >Jawahar Navodaya Vidyalaya <br />
+                    Bokaro, Jharkhand</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2018
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link education__button"
+                  >
+                    View More <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="education__modal">
+                    <div class="education__modal-content">
+                      <h4 class="education__modal-title">Class 10th Summary</h4>
+                      <i class="uil uil-times education__modal-close"></i>
+                      <ul class="education__modal-educations grid">
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: English, Hindi, Mathematics,
+                            Science, Social Science
+                          </p>
+                        </li>
+                        <li class="education__modal-education">
+                          <i
+                            class="uil uil-check-circle education__modal-icon"
+                          ></i>
+                          <p>Scored 92.4%</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!--==================== PROJECTS ====================-->
-        <section class="projects section" id="projects">
-            <h2 class="section__title">Projects</h2>
-            <span class="section__subtitle">Most Recent project</span>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div
+              class="qualification__content container grid"
+              data-content
+              id="certification"
+            >
+              <!--==================== CERTIFICATION 1 ====================-->
+              <a
+                href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S55880016430170211.pdf"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/nptel-logo.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Data Science for Engineers
+                    </h3>
+                    <span class="qualification__subtitle">NPTEL</span>
+                    <p class="qualification__skills">
+                      Skills: R, Algebra, Statistics, Optimization, Regression,
+                      Classification, Clustering
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!--==================== CERTIFICATION 2 ====================-->
+              <a
+                href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S55880016430170211.pdf"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/nptel-logo.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Introduntion to Soft Computing
+                    </h3>
+                    <span class="qualification__subtitle">NPTEL</span>
+                    <p class="qualification__skills">
+                      Skills: Fuzzy Logic, Fuzzy Systems, ANN, Genetic
+                      Algorithms
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!--==================== CERTIFICATION 3 ====================-->
+              <a
+                href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S55880016430170211.pdf"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/nptel-logo.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Programming, Data Structures and Algorithms using Python
+                    </h3>
+                    <span class="qualification__subtitle">NPTEL</span>
+                    <p class="qualification__skills">
+                      Skills: Python, Data Structures, Algorithms
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!--==================== CERTIFICATION 4 ====================-->
+              <a
+                href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs44/Course/NPTEL24CS44S116970012230723574.pdf"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/nptel-logo.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Programming in Modern C++
+                    </h3>
+                    <span class="qualification__subtitle">NPTEL</span
+                    ><br /><br />
+                    <p class="qualification__skills">Skills: C++, OOPs</p>
+                  </div>
+                </div>
+              </a>
+              <!--==================== CERTIFICATION 5 ====================-->
+              <a
+                href="https://www.freecodecamp.org/certification/shubhamdey01/responsive-web-design/"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/fcc.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Scientific Computing with Python
+                    </h3>
+                    <span class="qualification__subtitle">freeCodeCamp</span>
+                    <p class="qualification__skills">
+                      Skills: Python, OPPs, Data Structures, Regular
+                      Expressions, Problem Solving
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!--==================== CERTIFICATION 6 ====================-->
+              <a
+                href="https://olympus1.mygreatlearning.com/course_certificate/MUTPHDVL/"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/gl.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">Git Tutorial</h3>
+                    <span class="qualification__subtitle">Great Learning</span>
+                    <p class="qualification__skills">
+                      Skills: Version-control, Git, GitHub
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!--==================== CERTIFICATION 7 ====================-->
+              <a
+                href="https://www.freecodecamp.org/certification/shubhamdey01/responsive-web-design/"
+                target="_blank"
+                class="qualification__view"
+              >
+                <div class="qualification__certification">
+                  <div>
+                    <img
+                      src="/images/fcc.png"
+                      alt=""
+                      class="qualification__logo"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">Responsive Web Design</h3>
+                    <span class="qualification__subtitle">freeCodeCamp</span>
+                    <p class="qualification__skills">
+                      Skills: Web-design, HTML5, CSS
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="projects__container container grid">
-                
-                <!--==================== PROJECT 3 ====================-->
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="/images/recsumm.png" alt="Project 3" class="projects__img">
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most Recent project</span>
 
-                        <!-- <a href="#" class="projects__button button">
+        <div class="projects__container container grid">
+          <!--==================== PROJECT 3 ====================-->
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="/images/recsumm.png"
+                alt="Project 3"
+                class="projects__img"
+              />
+
+              <!-- <a href="#" class="projects__button button">
                             <i class="uil uil-external-link-alt button__icon"></i>
                         </a> -->
-                    </div>
-                    <div class="projects__content">
-                        <br>
-                        <!-- <h3 class="projects__subtitle"></h3> -->
-                        <h2 class="projects__title">RecSumm: A Recursive Framework for Summarizing Legal Documents</h2>
-                        <p class="projects__description">Developed RecSumm, a recursive NLP Frame work for summarizing 
-                            long legal documents using BART/DistilBART. By recursively processing lengthy texts, the model 
-                            preserves context while generating accurate and coherent summaries, outperforming leading LLMs 
-                            and legal-specific models on ROUGE and BLANC evaluation metrics.  
-                        </p>
-                    </div>
-                    <!-- <div class="projects__buttons">
+            </div>
+            <div class="projects__content">
+              <br />
+              <!-- <h3 class="projects__subtitle"></h3> -->
+              <h2 class="projects__title">
+                RecSumm: A Recursive Framework for Summarizing Legal Documents
+              </h2>
+              <p class="projects__description">
+                Developed RecSumm, a recursive NLP Frame work for summarizing
+                long legal documents using BART/DistilBART. By recursively
+                processing lengthy texts, the model preserves context while
+                generating accurate and coherent summaries, outperforming
+                leading LLMs and legal-specific models on ROUGE and BLANC
+                evaluation metrics.
+              </p>
+            </div>
+            <!-- <div class="projects__buttons">
                         <a href="#" target="_blank" class="projects__link">
                             <i class="uil uil-github-alt"></i> GitHub Repo
                         </a>
@@ -821,68 +1093,98 @@
                             <i class="uil uil-link-alt"></i> Live
                         </a>
                     </div> -->
-                </article>
-                
-                <!--==================== PROJECT 2 ====================-->
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="/images/textSummarization.png" alt="Project 2" class="projects__img">
+          </article>
 
-                        <!-- <a href="https://sentiment-analysis-twitter.streamlit.app/" target="_blank" class="projects__button button">
+          <!--==================== PROJECT 2 ====================-->
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="/images/textSummarization.png"
+                alt="Project 2"
+                class="projects__img"
+              />
+
+              <!-- <a href="https://sentiment-analysis-twitter.streamlit.app/" target="_blank" class="projects__button button">
                             <i class="uil uil-external-link-alt button__icon"></i>
                         </a> -->
-                    </div>
-                    <div class="projects__content">
-                        <br>
-                        <!-- <h3 class="projects__subtitle">Python, scikit-learn, Pandas, NLTK, Streamlit</h3> -->
-                        <h2 class="projects__title">A Comparitive Study of Abstractive Text Summarization Techniques</h2>
-                        <p class="projects__description">This project focuses on evaluating six abstractive summarization 
-                            models (Seq2Seq with Attention, BERTSUMABS, BART, T5, PEGASUS, XLNet) on benchmark datasets 
-                            (CNN/DailyMail, XSum, Gigaword). The models were analyzed using ROUGE and BLEU metrics to 
-                            measure fluency, coherence, and content accuracy.
-                        </p>
-                    </div>
-                    <div class="projects__buttons">
-                        <a href="https://github.com/shubhamdey01/Minor-Project.git" target="_blank" class="projects__link">
-                            <i class="uil uil-github-alt"></i> GitHub Repo
-                        </a>
-                        <!-- <a href="https://sentiment-analysis-twitter.streamlit.app/" target="_blank" class="projects__link">
+            </div>
+            <div class="projects__content">
+              <br />
+              <!-- <h3 class="projects__subtitle">Python, scikit-learn, Pandas, NLTK, Streamlit</h3> -->
+              <h2 class="projects__title">
+                A Comparitive Study of Abstractive Text Summarization Techniques
+              </h2>
+              <p class="projects__description">
+                This project focuses on evaluating six abstractive summarization
+                models (Seq2Seq with Attention, BERTSUMABS, BART, T5, PEGASUS,
+                XLNet) on benchmark datasets (CNN/DailyMail, XSum, Gigaword).
+                The models were analyzed using ROUGE and BLEU metrics to measure
+                fluency, coherence, and content accuracy.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/shubhamdey01/Minor-Project.git"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="uil uil-github-alt"></i> GitHub Repo
+              </a>
+              <!-- <a href="https://sentiment-analysis-twitter.streamlit.app/" target="_blank" class="projects__link">
                             <i class="uil uil-link-alt"></i> Live
                         </a> -->
-                    </div>
-                </article>
+            </div>
+          </article>
 
-                <!--==================== PROJECT 1 ====================-->
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="/images/sentimentAnalysis.png" alt="Project 1" class="projects__img">
+          <!--==================== PROJECT 1 ====================-->
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="/images/sentimentAnalysis.png"
+                alt="Project 1"
+                class="projects__img"
+              />
 
-                        <a href="https://sentiment-analysis-twitter.streamlit.app/" target="_blank" class="projects__button button">
-                            <i class="uil uil-external-link-alt button__icon"></i>
-                        </a>
-                    </div>
-                    <div class="projects__content">
-                        <br>
-                        <!-- <h3 class="projects__subtitle">Python, scikit-learn, Pandas, NLTK, Streamlit</h3> -->
-                        <h2 class="projects__title">Sentiment Analysis of Tweets</h2>
-                        <p class="projects__description">This project involves Natural Language Processing (NLP) 
-                            to perform sentiment analysis by classifying tweets as positive or negative. 
-                            Machine learning models are employed for classification, with additional focus on 
-                            text mining, text analysis, data analysis, and data visualization. 
-                        </p>
-                    </div>
-                    <div class="projects__buttons">
-                        <a href="https://github.com/shubhamdey01/Sentiment-Analysis-Twitter" target="_blank" class="projects__link">
-                            <i class="uil uil-github-alt"></i> GitHub Repo
-                        </a>
-                        <a href="https://sentiment-analysis-twitter.streamlit.app/" target="_blank" class="projects__link">
-                            <i class="uil uil-link-alt"></i> Live
-                        </a>
-                    </div>
-                </article>
-                
-                <!--==================== PROJECT 2 ====================-->
-                <!-- <article class="projects__card">
+              <a
+                href="https://sentiment-analysis-twitter.streamlit.app/"
+                target="_blank"
+                class="projects__button button"
+              >
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+            <div class="projects__content">
+              <br />
+              <!-- <h3 class="projects__subtitle">Python, scikit-learn, Pandas, NLTK, Streamlit</h3> -->
+              <h2 class="projects__title">Sentiment Analysis of Tweets</h2>
+              <p class="projects__description">
+                This project involves Natural Language Processing (NLP) to
+                perform sentiment analysis by classifying tweets as positive or
+                negative. Machine learning models are employed for
+                classification, with additional focus on text mining, text
+                analysis, data analysis, and data visualization.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/shubhamdey01/Sentiment-Analysis-Twitter"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="uil uil-github-alt"></i> GitHub Repo
+              </a>
+              <a
+                href="https://sentiment-analysis-twitter.streamlit.app/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="uil uil-link-alt"></i> Live
+              </a>
+            </div>
+          </article>
+
+          <!--==================== PROJECT 2 ====================-->
+          <!-- <article class="projects__card">
                     <div class="projects__image">
                         <img src="/images/Untitled.jpeg" alt="Project 2" class="projects__img">
 
@@ -891,8 +1193,8 @@
                         </a>
                     </div>
                     <div class="projects__content"> -->
-                        <!-- <h3 class="projects__subtitle"></h3> -->
-                        <!-- <h2 class="projects__title">Project 2</h2>
+          <!-- <h3 class="projects__subtitle"></h3> -->
+          <!-- <h2 class="projects__title">Project 2</h2>
                         <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Ipsum magni alias autem ratione beatae dolore repellendus optio deserunt temporibus 
                             saepe omnis, perspiciatis ad tempore sunt distinctio, pariatur non harum eligendi!
@@ -907,109 +1209,153 @@
                         </a>
                     </div>
                 </article> -->
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in Touch</span>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Contact Details</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="uil uil-fast-mail contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">shubhamdeyjnv@gmail.com</span>
+                <a
+                  href="mailto:shubhamdeyjnv@gmail.com"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write Me
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="uil uil-location-point contact__card-icon"></i>
+                <h3 class="contact__card-title">Location</h3>
+                <span class="contact__card-data"
+                  >Saram, Bokaro, Jharkhand, India - 829111</span
+                >
+                <a
+                  href="https://maps.google.com/?q=23.763864,85.818746&entry=gps"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  View on Map
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in Touch</span>
+          <div class="contact__content">
+            <h3 class="contact__title">Write me your message</h3>
 
-            <div class="contact__container container grid">
-                <div class="contact__content">
-                    <h3 class="contact__title">Contact Details</h3>
+            <form action="" class="contact__form" id="contact__form">
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Enter your name"
+                  class="contact__form-input"
+                />
+              </div>
 
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class="uil uil-fast-mail contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">shubhamdeyjnv@gmail.com</span>
-                            <a href="mailto:shubhamdeyjnv@gmail.com" target="_blank" class="contact__button">
-                                Write Me <i class="uil uil-arrow-right contact__button-icon"></i>
-                            </a>
-                        </div>
-                        
-                        <div class="contact__card">
-                            <i class="uil uil-location-point contact__card-icon"></i>
-                            <h3 class="contact__card-title">Location</h3>
-                            <span class="contact__card-data">Saram, Bokaro, Jharkhand, India - 829111</span>
-                            <a href="https://maps.google.com/?q=23.763864,85.818746&entry=gps" target="_blank" class="contact__button">
-                                View on Map <i class="uil uil-arrow-right contact__button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact__content">
-                    <h3 class="contact__title">Write me your message</h3>
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Mail</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Enter your email"
+                  class="contact__form-input"
+                />
+              </div>
 
-                    <form action="" class="contact__form" id="contact__form">
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" name="user_name" required placeholder="Enter your name" class="contact__form-input">
-                        </div>
-                        
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="email" name="user_email" required placeholder="Enter your email" class="contact__form-input">
-                        </div>
-                        
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="user_message" id="" cols="30" rows="10" required placeholder="Enter your message" class="contact__form-input"></textarea>
-                        </div>
+              <div class="contact__form-div contact__form-area">
+                <label for="" class="contact__form-tag">Message</label>
+                <textarea
+                  name="user_message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  required
+                  placeholder="Enter your message"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
 
-                        <div style="display:none;">
-                            <input type="text" name="website" autocomplete="off">
-                        </div>
+              <div style="display: none">
+                <input type="text" name="website" autocomplete="off" />
+              </div>
 
-                        <div class="g-recaptcha" data-sitekey="6LeKgWMtAAAAAEYrm1sUlGu1-6rbQzdaHDIE9eWI"></div>
+              <!-- <div class="g-recaptcha" data-sitekey="6LeKgWMtAAAAAEYrm1sUlGu1-6rbQzdaHDIE9eWI"></div> -->
 
-                        <button class="contact__form-button button button--flex" type="submit">
-                            Send Message <i class="uil uil-message button__icon"></i>
-                        </button>
-                        <p class="contact__message" id="contact__message"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
+              <button
+                class="contact__form-button button button--flex"
+                type="submit"
+              >
+                Send Message <i class="uil uil-message button__icon"></i>
+              </button>
+              <p class="contact__message" id="contact__message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Shubham Dey</h1>
-                    <span class="footer__subtitle">M.Sc. in Computer Science</span>
-                </div>
-                <div class="footer__socials">
-                    <a href="https://www.twitter.com/shubhamdey01/" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter"></i>
-                    </a>
-                    <!-- <a href="https://www.facebook.com/shubhamdey01/" target="_blank" class="footer__social">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Shubham Dey</h1>
+            <span class="footer__subtitle">M.Sc. in Computer Science</span>
+          </div>
+          <div class="footer__socials">
+            <a
+              href="https://www.twitter.com/shubhamdey01/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-twitter"></i>
+            </a>
+            <!-- <a href="https://www.facebook.com/shubhamdey01/" target="_blank" class="footer__social">
                         <i class="uil uil-facebook"></i>
                     </a> -->
-                    <a href="https://www.instagram.com/shubhamdey01/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <p class="footer__copy">&#169; <a href="https://shubhamdey01.github.io/">shubhamdey01.github.io</a>. All
-                rights reserved</p>
+            <a
+              href="https://www.instagram.com/shubhamdey01/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
         </div>
+        <p class="footer__copy">
+          &#169;
+          <a href="https://shubhamdey01.github.io/">shubhamdey01.github.io</a>.
+          All rights reserved
+        </p>
+      </div>
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+      <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
     <!--==================== MAIN JS ====================-->
     <script src="/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-</body>
-
+  </body>
 </html>

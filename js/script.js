@@ -165,13 +165,13 @@ const sendEmail = (e) => {
     }
 
     /*==================== RECAPTCHA ====================*/
-    const captcha = grecaptcha.getResponse();
+    // const captcha = grecaptcha.getResponse();
 
-    if (captcha.length === 0) {
-        contactMessage.textContent =
-            "Please verify that you are not a robot.";
-        return;
-    }
+    // if (captcha.length === 0) {
+    //     contactMessage.textContent =
+    //         "Please verify that you are not a robot.";
+    //     return;
+    // }
 
     /*==================== SEND EMAIL ====================*/
     emailjs.sendForm(
