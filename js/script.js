@@ -76,27 +76,142 @@ modalCloses.forEach((modalClose, i) => {
 })
 
 /*==================== EMAIL JS ====================*/
-const contactForm = document.getElementById('contact__form'),
-    contactMessage = document.getElementById('contact__message')
+/*==================== EMAIL JS ====================*/
 
-const sendEmail = (e) =>{
-    e.preventDefault()
+const contactForm = document.getElementById("contact__form");
+const contactMessage = document.getElementById("contact__message");
 
-    emailjs.sendForm('service_b7qjgmd', 'template_i9a3koo', '#contact__form', '3Tle9MVUGVZJejuxy')
-        .then(() =>{
-            contactMessage.textContent = 'Message sent successfully ✅'
+// Store page load time
+const formLoadedTime = Date.now();
 
-            setTimeout(() =>{
-                contactMessage.textContent = ''
-            }, 5000)
+const sendEmail = (e) => {
+    e.preventDefault();
 
-            contactForm.reset()
-        }, () =>{
-            contactMessage.textContent = 'Message not sent (service error) ❌'
-        })
-}
+    // Get form values
+    const name = contactForm.user_name.value.trim();
+    const email = contactForm.user_email.value.trim();
+    const message = contactForm.user_message.value.trim();
 
-contactForm.addEventListener('submit', sendEmail)
+    // Honeypot field
+    const honeypot = contactForm.querySelector('input[name="website"]');
+
+    /*==================== HONEYPOT ====================*/
+    if (honeypot && honeypot.value !== "") {
+        return;
+    }
+
+    /*==================== NAME VALIDATION ====================*/
+    const nameRegex = /^[A-Za-z\s]{3,40}$/;
+
+    if (!nameRegex.test(name)) {
+        contactMessage.textContent =
+            "Please enter a valid name.";
+        return;
+    }
+
+    /*==================== EMAIL VALIDATION ====================*/
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        contactMessage.textContent =
+            "Please enter a valid email address.";
+        return;
+    }
+
+    /*==================== MESSAGE LENGTH ====================*/
+    if (message.length < 20) {
+        contactMessage.textContent =
+            "Message should be at least 20 characters long.";
+        return;
+    }
+
+    /*==================== WORD COUNT ====================*/
+    const words = message.split(/\s+/);
+
+    if (words.length < 4) {
+        contactMessage.textContent =
+            "Please enter a more detailed message.";
+        return;
+    }
+
+    /*==================== BLOCK URLS ====================*/
+    if (/(https?:\/\/|www\.)/i.test(message)) {
+        contactMessage.textContent =
+            "Links are not allowed in the message.";
+        return;
+    }
+
+    /*==================== PREVENT INSTANT SUBMISSION ====================*/
+    const seconds = (Date.now() - formLoadedTime) / 1000;
+
+    if (seconds < 5) {
+        contactMessage.textContent =
+            "Please wait a few seconds before submitting.";
+        return;
+    }
+
+    /*==================== RATE LIMIT ====================*/
+    const lastSubmit = localStorage.getItem("lastSubmit");
+
+    if (lastSubmit) {
+
+        const diff = Date.now() - Number(lastSubmit);
+
+        if (diff < 60000) {
+            contactMessage.textContent =
+                "Please wait 1 minute before sending another message.";
+            return;
+        }
+    }
+
+    /*==================== RECAPTCHA ====================*/
+    const captcha = grecaptcha.getResponse();
+
+    if (captcha.length === 0) {
+        contactMessage.textContent =
+            "Please verify that you are not a robot.";
+        return;
+    }
+
+    /*==================== SEND EMAIL ====================*/
+    emailjs.sendForm(
+        "service_b7qjgmd",
+        "template_i9a3koo",
+        "#contact__form",
+        "3Tle9MVUGVZJejuxy"
+    )
+    .then(() => {
+
+        contactMessage.textContent =
+            "Message sent successfully ✅";
+
+        // Save submission time
+        localStorage.setItem(
+            "lastSubmit",
+            Date.now()
+        );
+
+        // Reset form
+        contactForm.reset();
+
+        // Reset captcha
+        grecaptcha.reset();
+
+        // Clear success message
+        setTimeout(() => {
+            contactMessage.textContent = "";
+        }, 5000);
+
+    })
+    .catch(() => {
+
+        contactMessage.textContent =
+            "Message could not be sent ❌";
+
+    });
+};
+
+contactForm.addEventListener("submit", sendEmail);
 
 
 

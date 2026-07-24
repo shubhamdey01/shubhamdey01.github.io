@@ -196,7 +196,7 @@
 
                 <div class="about__data">
                     <p class="about__description">
-                        Ph.D. Research Scholar in Computer Science & ENgineering at IIT Kharagpur, working under the 
+                        Ph.D. Research Scholar in Computer Science & Engineering at IIT Kharagpur, working under the 
                         supervision of Prof. Sudip Misra. I Hold M.Sc. in Computer Science from Banaras Hindu University 
                         and B.Sc. (Honours) in Computer Science from Visva-Bharati University. <br><br>
                         My research interest lie in computer science, with a strong focus on developing innovative 
@@ -204,7 +204,7 @@
                         learning and I enjoy exploring emerging technologies and contributing to impactful academic work.
                     </p>
                     <div class="about__buttons">
-                        <a download="" href="/pdf/Shubham_MSc_2025.pdf" class="button button--flex">
+                        <a download="" href="/pdf/resume.pdf" class="button button--flex">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -959,6 +959,12 @@
                             <textarea name="user_message" id="" cols="30" rows="10" required placeholder="Enter your message" class="contact__form-input"></textarea>
                         </div>
 
+                        <div style="display:none;">
+                            <input type="text" name="website" autocomplete="off">
+                        </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LeKgWMtAAAAAEYrm1sUlGu1-6rbQzdaHDIE9eWI"></div>
+
                         <button class="contact__form-button button button--flex" type="submit">
                             Send Message <i class="uil uil-message button__icon"></i>
                         </button>
@@ -1002,6 +1008,7 @@
     <!--==================== MAIN JS ====================-->
     <script src="/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 
